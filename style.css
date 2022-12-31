@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-.timer {
+@media (max-width: 767px) {
+  /* стили для xs-устройств */.timer {
     display:block;
     margin:auto;  
     width: 350px;
@@ -7,7 +8,173 @@
     }
   .timer__items {
     font-size: 50px;
-    font: Tahoma;
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    }
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 30px;
+    }
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+    }
+.box{
+    display:block;
+    margin:auto;
+    max-width: 700px;
+    }
+.pic{
+    width: 100%;
+    padding-top: 20px;
+  }
+.gif{
+    width: 170px;
+    display:block;
+    margin:auto;
+    padding-top: 20px;
+  }
+p{
+    text-align: center;
+    font-size: 35pt;
+    color:#adbac7;
+    background-color: #22272e;
+    padding: 0px;
+    margin: 0;
+  }
+h1{
+    text-align: center;
+    font-size: 25pt;
+    color: #347d39;
+  }
+  h2{
+    text-align: center;
+    font-size: 40pt;
+    color: #adbac7;
+    margin: 0;
+
+  }
+li{
+    text-align: center;
+    font-size: 25pt;
+    color: #adbac7;
+    
+}
+body{
+  background-color: #1c2128;
+  font-family: 'PT Sans', sans-serif;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+  /* стили для xs-устройств */.timer {
+    display:block;
+    margin:auto;  
+    width: 350px;
+    color: #6f7c89;
+    }
+  .timer__items {
+    font-size: 50px;
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    }
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 30px;
+    }
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+    }
+.box{
+    display:block;
+    margin:auto;
+    max-width: 700px;
+    }
+.pic{
+    width: 100%;
+    padding-top: 20px;
+  }
+.gif{
+    width: 170px;
+    display:block;
+    margin:auto;
+    padding-top: 20px;
+  }
+p{
+    text-align: center;
+    font-size: 35pt;
+    color:#adbac7;
+    background-color: #22272e;
+    padding: 0px;
+    margin: 0;
+  }
+h1{
+    text-align: center;
+    font-size: 25pt;
+    color: #347d39;
+  }
+  h2{
+    text-align: center;
+    font-size: 40pt;
+    color: #adbac7;
+    margin: 0;
+
+  }
+li{
+    text-align: center;
+    font-size: 25pt;
+    color: #adbac7;
+    
+}
+body{
+  background-color: #1c2128;
+  font-family: 'PT Sans', sans-serif;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+  .timer {
+    display:block;
+    margin:auto;  
+    width: 350px;
+    color: #6f7c89;
+    }
+  .timer__items {
+    font-size: 50px;
+    
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -52,15 +219,20 @@
 p{
     text-align: center;
     font-size: 50pt;
-    font: Tahoma;
+    
     color:#adbac7;
     background-color: #22272e;
     padding: 0px;
   }
 h1{
     text-align: center;
+    font-size: 38pt;
+        color: #347d39;
+  }
+  h2{
+    text-align: center;
     font-size: 50pt;
-    font: Tahoma;
+   
     color: #adbac7;
   }
 li{
@@ -73,4 +245,178 @@ body{
   background-color: #1c2128;
   font-family: 'PT Sans', sans-serif;
 }
+body{
+  background-color: #1c2128;
+  font-family: 'PT Sans', sans-serif;
+}
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для xs-устройств */.timer {
+    display:block;
+    margin:auto;  
+    width: 350px;
+    color: #6f7c89;
+    }
+  .timer__items {
+    font-size: 50px;
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    }
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 30px;
+    }
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+    }
+.box{
+    display:block;
+    margin:auto;
+    max-width: 900px;
+    }
+.pic{
+    width: 100%;
+    padding-top: 20px;
+  }
+.gif{
+    width: 170px;
+    display:block;
+    margin:auto;
+    padding-top: 20px;
+  }
+p{
+    text-align: center;
+    font-size: 45pt;
+    color:#adbac7;
+    background-color: #22272e;
+    padding: 0px;
+    margin: 0;
+  }
+h1{
+    text-align: center;
+    font-size: 45pt;
+    color: #347d39;
+    margin-top: 0;
+  }
+  h2{
+    text-align: center;
+    font-size: 50pt;
+    color: #adbac7;
+    margin: 0;
+
+  }
+li{
+    text-align: center;
+    font-size: 30pt;
+    color: #adbac7;
+    
+}
+body{
+  background-color: #1c2128;
+  font-family: 'PT Sans', sans-serif;
+}
+}
+
+@media (min-width: 1200px) {
+  .timer {
+    display:block;
+    margin:auto;  
+    width: 350px;
+    color: #6f7c89;
+    }
+  .timer__items {
+    font-size: 50px;
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    }
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 30px;
+    }
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+    }
+.box{
+    display:block;
+    margin:auto;
+    max-width: 1280px;
+    }
+.pic{
+    width: 100%;
+    padding-top: 20px;
+  }
+.gif{
+    width: 170px;
+    display:block;
+    margin:auto;
+    padding-top: 20px;
+  }
+p{
+    text-align: center;
+    font-size: 50pt;
+    
+    color:#adbac7;
+    background-color: #22272e;
+    padding: 0px;
+    margin: 0;
+  }
+h1{
+    text-align: center;
+    font-size: 50pt;
+    margin: 15;
+    color: #347d39;
+  }
+  h2{
+    text-align: center;
+    font-size: 50pt;
+    margin: 15;
+    color: #adbac7;
+  }
+li{
+    text-align: center;
+    font-size: 30pt;
+    color: #adbac7;
+    
+}
+body{
+  background-color: #1c2128;
+  font-family: 'PT Sans', sans-serif;
+}
+  /* стили для lg-устройств */
+}
+
   
