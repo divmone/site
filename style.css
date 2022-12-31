@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 .timer {
     display:block;
     margin:auto;  
@@ -66,8 +67,10 @@ li{
     text-align: center;
     font-size: 30pt;
     color: #adbac7;
+    
 }
 body{
   background-color: #1c2128;
+  font-family: 'PT Sans', sans-serif;
 }
   
