@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Allow: *.css
+Allow: *.js
+Host: www.11class.ml
+User-agent: Yandex
+Disallow: */templates
+Disallow: */css
+Host: www.11class.ml
