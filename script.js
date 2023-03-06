@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+ment.addEventListener('DOMContentLoaded', function() {
     const deadline = new Date(2023, 06, 10);
     let timerId = null;
     function declensionNum(num, words) {
